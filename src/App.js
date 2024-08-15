@@ -1,14 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './Header';
+import Home from './Home';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1>My First React App</h1>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        {/* Add other routes here */}
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

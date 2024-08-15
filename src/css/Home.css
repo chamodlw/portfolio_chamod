@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.Home-header {
+    margin-top: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px #00000080;
+}
+
+.Home-profile-pic {
+    border: 4px solid white;
+    background-color: white;
+    clip-path: polygon(
+        30% 0%, 70% 0%, /* Top side */
+        100% 30%, 100% 70%, /* Right side */
+        70% 100%, 30% 100%, /* Bottom side */
+        0% 70%, 0% 30% /* Left side */
+    );
+    margin-top: 15%;
+    margin-right: 5%;
+    float: right;
+}
+.myname {
+    font-size: 28px;
+    color: #0F8CEC;
+    
+}
+.Home-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+  }
+  
+  .Home-left {
+    margin-top: 2%;
+    margin-left: 5%;
+    flex: 1;
+  }
+  
+  .Home-right {
+    margin-top: 2%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+body {
+    background: linear-gradient(to bottom, black, #0e0e76);
+}

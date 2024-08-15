@@ -1,0 +1,122 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    transition: width 0.3s ease;
+    width: 100%;
+}
+
+.navbar.settings-open {
+    width: 80%; /* Adjust this to make space for settings panel */
+}
+
+.logo {
+    
+    color: white;
+    margin: 0;
+    margin-left: 4%;
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: "Arial", sans-serif; /* Add the desired font family */
+    animation: fade-in 2s ease-in-out; /* Add animation properties */
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent line breaks */
+    -webkit-text-stroke: 0.5px #0F8CEC; /* Add text border color */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateX(0); /* Move text offscreen */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Move text back to original position */
+    }
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #0F8CEC;
+    position: relative; /* Add relative positioning */
+}
+.nav-link.active {
+    color: #0F8CEC;
+    text-decoration-color: #0f8cec; /* Set underline color to white */
+}
+
+.nav-link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust the distance from the text */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height of the line */
+    background-color: #0f8cec;
+}
+
+.settings-panel {
+    position: fixed; /* Use fixed positioning */
+    top: 0;
+    right: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #444;
+    padding: 20px;
+    color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%); /* Initially hide the panel */
+    transition: transform 0.3s ease;
+}
+
+.settings-panel.show {
+    transform: translateX(0); /* Show the panel when settingsOpen is true */
+}
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #0F8CEC;
+}
+
+.settings-panel {
+    position: fixed; /* Use fixed positioning */
+    top: 0;
+    right: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #444;
+    padding: 20px;
+    color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%); /* Initially hide the panel */
+    transition: transform 0.3s ease;
+}
+
+.settings-panel.show {
+    transform: translateX(0); /* Show the panel when settingsOpen is true */
+}
