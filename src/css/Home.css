@@ -1,0 +1,68 @@
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.Home-header {
+    margin-top: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px #00000080;
+}
+
+.Home-profile-pic {
+    margin-top: 25%;
+    margin-left: 18%;
+    float: right;
+    width: 100px; /* Adjust the width */
+    height: 100px; /* Adjust the height */
+    object-fit: cover; /* Ensure the image covers the circular area */
+    
+}
+
+.Home-profile-pic-border{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.myname {
+    font-size: 28px;
+    color: #0F8CEC;
+    
+}
+.Home-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+  }
+  
+  .Home-left {
+    margin-top: 2%;
+    margin-left: 5%;
+    flex: 1;
+  }
+  
+  .Home-right {
+    margin-top: 2%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.resume{
+
+} 
+.b1{
+    background-color: #0F8CEC;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    
+}
+
+body {
+    background: linear-gradient(to bottom, black, #0e0e76);
+}
