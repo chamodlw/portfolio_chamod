@@ -1,0 +1,12 @@
+footer {
+    border-top: 2px solid white;
+  }
+  
+  footer a:hover {
+    color: #ffcc00;
+  }
+  
+  footer p {
+    font-family: 'Roboto', sans-serif;
+  }
+  
