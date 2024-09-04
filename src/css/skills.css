@@ -1,0 +1,88 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.technical {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 8%;
+}
+
+.technical-header {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.tag-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 10%;
+    margin-bottom: 30px;
+}
+
+.horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #0e0e76;
+}
+
+.horizontal-list > div {
+    margin-right: 50px; /* Space between divs */
+}
+
+.horizontal-list > div:last-child {
+    margin-right: 0; /* No extra space after the last div */
+}
+
+.web {
+    margin-bottom: 20px;
+}
+
+.program {
+    margin-bottom: 20px;
+}
+
+.mobile {
+    margin-bottom: 20px;
+}
+
+.design {
+    margin-bottom: 20px;
+}
+
+.co-headers {
+    font-size: 22px;
+    color: #0e0e76;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.soft {
+    width: 100%;
+    margin-left: 8%;
+}
+
+.soft-header {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.soft-category {
+    margin-bottom: 15px;
+}
+
+.soft-cat-headers {
+    font-size: 22px;
+    color: #0e0e76;
+    text-align: left;
+}
