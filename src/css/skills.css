@@ -16,6 +16,7 @@
     color: #ffffff;
     text-align: left;
     margin-bottom: 20px;
+    -webkit-text-stroke: 0.5px #0F8CEC;
 }
 
 .tag-section {
@@ -27,15 +28,19 @@
 }
 
 .horizontal-list {
+    margin-top: 15px;
+    font-size: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 30px;
-    color: #0e0e76;
+    color: #ffffff;
 }
 
 .horizontal-list > div {
     margin-right: 50px; /* Space between divs */
+    border: 2px solid #ffffff;
+    border-radius: 25px; /* Curved edges */
+    padding: 10px;
 }
 
 .horizontal-list > div:last-child {
@@ -59,8 +64,16 @@
 }
 
 .co-headers {
-    font-size: 22px;
-    color: #0e0e76;
+    margin-left: 0%;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.second-header {
+    font-size: 18px;
+    color: #ffffff;
     margin-bottom: 15px;
     text-align: left;
 }
@@ -75,6 +88,7 @@
     color: #ffffff;
     text-align: left;
     margin-bottom: 20px;
+    -webkit-text-stroke: 0.5px #0F8CEC;
 }
 
 .soft-category {
@@ -82,7 +96,52 @@
 }
 
 .soft-cat-headers {
-    font-size: 22px;
-    color: #0e0e76;
+    font-size: 20px;
+    color: #ffffff;
     text-align: left;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0F8CEC;
+}
+
+.card{
+    margin-right: 45%;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000000;
+}
+
+.card-with-head{
+    margin-left: 3%;
+    
+}
+
+.card-header{
+    flex: 0.4;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 20px;
+    -webkit-text-stroke: 0.5px #0F8CEC;
+}
+
+.card-image{
+    margin-left: 2px;
+    width: 80%;
+    flex: 1;
+}
+
+.card-text{
+    flex: 1;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    margin-right: 5px;
 }
