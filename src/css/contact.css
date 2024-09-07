@@ -1,0 +1,95 @@
+.contact{
+    min-height: 75vh;
+}
+.contact-header{
+    margin-top: 4%;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.contact-header h1 {
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    overflow: hidden; /* Ensures no overflow during animation */
+    display: inline-block;
+    white-space: nowrap;
+    animation: reveal 2s ease forwards; /* Animation to reveal letters */
+}
+
+.contact-header h1 span {
+    display: inline-block;
+    opacity: 0; /* Initially hide all letters */
+    transform: translateX(-20px); /* Move letters from left */
+    animation: fadeIn 0.5s forwards;
+    animation-delay: calc(var(--index) * 0.1s); /* Delay for each letter */
+}
+
+.contact-info{
+    
+}
+
+.contact-info-header{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info-header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+    animation: blink 1.75s infinite; /* Ensure animation is applied */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contact-info-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center all contact info items */
+    justify-content: center;
+    gap: 30px; /* Space between each contact info item */
+    margin-bottom: 5%;
+}
+
+.contact-info-item {
+    color: white;
+    display: flex;
+    flex-direction: column; /* Align icon and text vertically */
+    align-items: center; /* Center the items horizontally */
+    text-align: center; /* Center the text */
+    cursor: pointer;
+}
+
+.contact-info-item span {
+    margin-top: 10px; /* Space between icon and text */
+}
+
+.contact-info-item svg {
+    font-size: 40px; /* Adjust icon size if needed */
+}
