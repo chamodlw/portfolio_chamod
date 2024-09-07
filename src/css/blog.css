@@ -1,0 +1,52 @@
+.Blog{
+    margin-top: 4%;
+    margin-left: 5%;
+    min-height: 80vh;
+}
+
+.Blog-header{
+    font-size: 28px;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 0.5px #0F8CEC;
+}
+
+.card{
+    margin-right: 45%;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000000;
+}
+
+.card-with-head{
+    margin-left: 3%;
+    
+}
+
+.card-header{
+    flex: 0.4;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 20px;
+    -webkit-text-stroke: 0.5px #0F8CEC;
+}
+
+.card-image{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    width: 80%;
+    flex: 1;
+}
+
+.card-text{
+    flex: 1;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    margin-right: 5px;
+}

@@ -4,8 +4,13 @@ import profpic from './images/chamod1.png';
 import Mysides from './components/mysides.js';
 import ThreeScene from './components/ThreeScene.js';
 import Footer from './components/footer.js';
+import cv from './pdf/resume.pdf';
 
 const Home = () => {
+const handleClick = () => {
+    window.open(cv, '_blank');
+};
+
 return (
     <div className="Home">
         <div className="Home-container">
@@ -16,7 +21,7 @@ return (
                 </div>
                 <Mysides/>
                 <div className='resume'>
-                    <button className="b1">Resume</button>
+                    <button className="b1" onClick={handleClick}>Resume</button>
                 </div>
             </div>
             <div className="Home-right">

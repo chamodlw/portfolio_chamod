@@ -58,9 +58,9 @@ const Header = () => {
           <FontAwesomeIcon icon={faCode} style={{ marginRight: '3px' }} />
           Skills
         </NavLink>
-        <NavLink to="/services" className="nav-link">
+        <NavLink to="/projects" className="nav-link">
           <FontAwesomeIcon icon={faBriefcase} style={{ marginRight: '3px' }} />
-          Services
+          Projects
         </NavLink>
         <NavLink to="/blog" className="nav-link">
           <FontAwesomeIcon icon={faBlog} style={{ marginRight: '3px' }} />

@@ -1,0 +1,31 @@
+.projects {
+    
+    min-height: 80vh; /* Adjust as needed to fill the container */
+}
+
+.projects-header {
+    font-size: 18px;
+    color: white;
+    margin-top: 3%; /* Remove margin-top to allow centering */
+    text-align: center; /* Center text within the header */
+}
+
+.nav-projects {
+    display: flex;
+    margin-top: 2%; /* Adjust as needed */
+    justify-content: center;
+}
+
+.projects-body{
+
+}
+
+.web {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.web-header {
+    color: white;
+    margin-top: 3%; /* Remove margin-top to allow centering */
+}

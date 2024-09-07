@@ -5,7 +5,7 @@ import Header from './Header';
 import Home from './Home';
 import About from './components/about';
 import Skills from './components/skills';
-import Services from './components/services';
+import Projects from './components/projects';
 import Blog from './components/blog';
 import Contact from './components/contact';
 
@@ -16,7 +16,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/skills" element={<Skills/>} />
-        <Route path="/services" element={<Services/>} />
+        <Route path="/projects" element={<Projects/>} />
         <Route path="/blog" element={<Blog/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/about" element={<About/>} />
