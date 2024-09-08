@@ -32,7 +32,7 @@ const Skills = () => {
                                     <img src={img1} alt="Card" className="card-image" />
                                 </div>
                                 <div className="card-text">
-                                    <h4>Second Year Software Project | Medical Lab Management System</h4>
+                                    <h4>Medical Lab Management System | Second Year Software Project </h4>
                                     <p><a href="https://github.com/chamodlw/SW_No.14_Frontend" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> GitHub Repository</a></p>
                                     <p><a href="https://youtu.be/RtacSBP3y1Q?si=jxBOoaLwE_CWasXo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} /> Demo Video</a></p>
                                     <p><a href="https://www.linkedin.com/posts/chamod-weerasinghe-b89aaa293_lims-medical-lab-information-management-activity-7235291488153133056-zaQx?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn Post</a></p>
@@ -58,7 +58,7 @@ const Skills = () => {
                                     <img src={img2} alt="Card" className="card-image" />
                                 </div>
                                 <div className="card-text">
-                                    <h4>My Initial Flutter Project | BMI Calculator | Mobile Application</h4>
+                                    <h4> BMI Calculator | Flutter Project | Mobile Application</h4>
                                     <p><a href="https://github.com/chamodlw/BMI" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> GitHub Repository</a></p>
                                     <p><a href="https://youtu.be/YoBMERlW-gg?si=1H1KITXVKMxlZbUR" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} /> Demo Video</a></p>
                                 </div>

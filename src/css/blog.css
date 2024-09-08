@@ -13,7 +13,8 @@
 }
 
 .card{
-    margin-right: 45%;
+    justify-content: center;
+    
     border: 1px solid #ffffff;
     border-radius: 10px;
     display: flex;

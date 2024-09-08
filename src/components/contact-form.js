@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { TextField, Button, Grid, Paper } from '@mui/material';
 import emailjs from 'emailjs-com';
+import img1 from '../images/chamod1.png'; // Import your image
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -44,13 +45,18 @@ const ContactForm = () => {
             console.error('Error sending message:', error);
         });
     };
-    
 
     return (
-        <Paper elevation={3} style={{ padding: '20px', paddingTop: '30px', paddingBottom: '25px', borderRadius: '8px', width: '60%', margin: '15px auto', border: '2px solid black', backgroundColor: 'rgba(255, 255, 255, 0.75)' }}>
+        <Paper elevation={3} style={{ padding: '20px', paddingTop: '35px', paddingBottom: '25px', borderRadius: '8px', width: '40%',minWidth: '400px', margin: '15px auto', border: '2px solid black', backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
+            <img 
+                src={img1}  // Replace with your image URL or path
+                alt="Contact Form" 
+                style={{ width: '150px', marginBottom: '1px', display: 'block', marginLeft: 'auto',marginTop:'10px' ,marginRight: 'auto' , border: '2px solid black', borderRadius: '50%' }} 
+            />
+            <h1 style={{ textAlign: 'center', marginBottom: '25px' }}>Chamod Weerasinghe</h1>
             <form noValidate autoComplete="off" onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} >
                         <TextField
                             label="Name"
                             variant="outlined"
@@ -61,7 +67,7 @@ const ContactForm = () => {
                             onChange={handleChange}
                         />
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12}>
                         <TextField
                             label="Email"
                             variant="outlined"
@@ -73,7 +79,7 @@ const ContactForm = () => {
                             onChange={handleChange}
                         />
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} >
                         <TextField
                             label="Phone Number"
                             variant="outlined"
@@ -100,6 +106,7 @@ const ContactForm = () => {
                     </Grid>
                     <Grid item xs={12}>
                         <Button
+                            style={{ width: '100%' }}
                             variant="contained"
                             color="primary"
                             type="submit"
