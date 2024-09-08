@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Grid } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBlog, faBriefcase, faCode, faCog, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBlog, faBriefcase, faCode, faCog, faEnvelope, faHome, faUniversity} from '@fortawesome/free-solid-svg-icons';
 import { NavLink, useNavigate } from 'react-router-dom'; // Import useNavigate
 import './css/Header.css'; // Import the CSS file
 import Typewriter from 'typewriter-effect';
@@ -70,9 +70,9 @@ const Header = () => {
           <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: '3px' }} />
           Contact
         </NavLink>
-        <NavLink to="/about" className="nav-link">
-          <FontAwesomeIcon icon={faUser} style={{ marginRight: '3px' }} />
-          About
+        <NavLink to="/education" className="nav-link">
+          <FontAwesomeIcon icon={faUniversity} style={{ marginRight: '3px' }} />
+          Education
         </NavLink>
         <NavLink to="/settings" className="nav-link" onClick={handleSettingsClick}>
           <FontAwesomeIcon icon={faCog} style={{ marginLeft: '30px', marginRight: '35px' }} />

@@ -26,6 +26,68 @@
 }
 
 .web-header {
+    display: flex;
+    justify-content: center;
     color: white;
     margin-top: 3%; /* Remove margin-top to allow centering */
+}
+
+.web-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:3%;
+    
+}
+
+.web-com{
+    margin-bottom: 4%;
+}
+
+.mobile {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.mobile-header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 3%; /* Remove margin-top to allow centering */
+}
+
+.mobile-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:3%;
+    
+}
+
+.mobile-com{
+    margin-bottom: 4%;
+}
+
+.mobile {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.AI-header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 3%; /* Remove margin-top to allow centering */
+}
+
+.AI-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:3%;
+    
+}
+
+.AI-com{
+    margin-bottom: 4%;
 }

@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { GitHub, LinkedIn, MedicalServicesOutlined, YouTube } from '@mui/icons-material';
-import web_img1 from '../images/SW_project_L2.jpg';
+import web_img1 from '../../images/SW_project_L2.jpg';
 
 // Sections in array format
 const web1 = {
