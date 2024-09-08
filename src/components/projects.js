@@ -5,6 +5,9 @@ import Navprojects from './navbar-projects';
 import Web1 from './projects/web1';
 import Web2 from './projects/web2';
 import Web3 from './projects/web3';
+import Mobile1 from './projects/mobile1';
+import Mobile2 from './projects/mobile2';
+import Mobile3 from './projects/mobile3';
 
 const Projects = () => {
     return (
@@ -39,13 +42,13 @@ const Projects = () => {
                         </div>
                         <div className='mobile-body'>
                             <div className='mobile-com'>
-                                <Web1/>
+                                <Mobile1/>
                             </div>
                             <div className='mobile-com'>
-                                <Web2/>
+                                <Mobile2/>
                             </div>
                             <div className='mobile-com'>
-                                <Web3/>
+                                <Mobile3/>
                             </div>
                         </div>
                     </div>
@@ -53,6 +56,7 @@ const Projects = () => {
                         <div className='AI-header'>
                             <h1>AI Applications</h1>
                         </div>
+                        {/*
                         <div className='AI-body'>
                             <div className='AI-com'>
                                 <Web1/>
@@ -64,6 +68,7 @@ const Projects = () => {
                                 <Web3/>
                             </div>
                         </div>
+                        */}
                     </div>
                 </div>
             </div>
