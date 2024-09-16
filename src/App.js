@@ -8,6 +8,7 @@ import Skills from './components/skills';
 import Projects from './components/projects';
 import Blog from './components/blog';
 import Contact from './components/contact';
+import Footer from './components/footer';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/education" element={<Education/>} />
         {/* Add other routes here */}
       </Routes>
+    <Footer/>
     </Router>
   );
 };

@@ -3,7 +3,6 @@ import './css/Home.css';
 import profpic from './images/chamod1.png';
 import Mysides from './components/mysides.js';
 import ThreeScene from './components/ThreeScene.js';
-import Footer from './components/footer.js';
 import cv from './pdf/resume.pdf';
 
 const Home = () => {
@@ -37,7 +36,6 @@ return (
                 </div>
             </div>
         </div>
-        <Footer />
     </div>
 );
 };

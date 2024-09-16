@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/contact.css';
-import Footer from './footer';
 import ContactForm from './contact-form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -70,7 +69,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 };

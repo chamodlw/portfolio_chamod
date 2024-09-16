@@ -10,8 +10,9 @@ const Footer = () => {
       sx={{
         backgroundColor: '#333333',
         color: '#fff',
-        padding: '20px 0',
+        padding: '20px',
         textAlign: 'center',
+        width: '100%',
       }}
     >
       <Typography variant="h6" sx={{ marginBottom: '10px' }}>

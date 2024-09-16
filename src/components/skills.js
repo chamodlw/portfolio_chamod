@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/skills.css';
-import Footer from './footer';
 import img1 from '../images/SW_project_L2.jpg';
 import img2 from '../images/bmi.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -110,7 +109,6 @@ const Skills = () => {
                 </div>
             </div>  
         </div>
-        <Footer />
         </div>
     );
 };

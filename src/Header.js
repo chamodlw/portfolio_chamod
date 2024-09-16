@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Grid } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBlog, faBriefcase, faCode, faCog, faEnvelope, faHome, faUniversity} from '@fortawesome/free-solid-svg-icons';
 import { NavLink, useNavigate } from 'react-router-dom'; // Import useNavigate
@@ -8,37 +7,10 @@ import Typewriter from 'typewriter-effect';
 
 const Header = () => {
   
-  const [settingsOpen, setSettingsOpen] = useState(false);
-  const [passwordInput, setPasswordInput] = useState('');
-  const [password, setPassword] = useState('');
   const navigate = useNavigate(); // Use useNavigate
 
-  const handleSettingsClick = () => {
-    setSettingsOpen(!settingsOpen);
-  };
-
-  const handlePasswordInputChange = (event) => {
-    setPasswordInput(event.target.value);
-  };
-
-  const handleLoginClick = () => {
-    if (passwordInput === '12345') {
-      setPassword('12345');
-    } else {
-      alert('Incorrect password. Please try again.');
-    }
-  };
-
-  const handleLogoutClick = () => {
-    setPassword('');
-    setPasswordInput(''); // Clear the input field as well
-    navigate('/'); // Use navigate to redirect
-    setSettingsOpen(!settingsOpen);
-
-  };
-
   return (
-    <nav className={`navbar ${settingsOpen ? 'settings-open' : ''}`}>
+    <nav className={`navbar`}>
       <h1 className="logo">
         <Typewriter
           options={{
@@ -74,33 +46,9 @@ const Header = () => {
           <FontAwesomeIcon icon={faUniversity} style={{ marginRight: '3px' }} />
           Education
         </NavLink>
-        <NavLink to="/settings" className="nav-link" onClick={handleSettingsClick}>
+        <NavLink className="nav-link">
           <FontAwesomeIcon icon={faCog} style={{ marginLeft: '30px', marginRight: '35px' }} />
         </NavLink>
-      </div>
-
-      <div className={`settings-panel ${settingsOpen ? 'show' : ''}`}>
-        <Grid>
-          {password === '12345' ? (
-            <Grid>
-              <h1 style={{ marginLeft: '5%', textAlign: 'left' }}>ADMIN Section</h1>
-              <button style={{ marginLeft: '5%' }} onClick={handleLogoutClick}>Logout</button>
-            </Grid>
-          ) : (
-            <>
-              <h1 style={{ marginLeft: '5%', textAlign: 'left' }}>Switch Mode</h1>
-              <Grid style={{ marginLeft: '5%' }}>
-                <input
-                  type="password"
-                  placeholder="Enter password"
-                  value={passwordInput}
-                  onChange={handlePasswordInputChange}
-                />
-                <button onClick={handleLoginClick} style={{ marginTop: '5%' }}>Login</button>
-              </Grid>
-            </>
-          )}
-        </Grid>
       </div>
     </nav>
   );

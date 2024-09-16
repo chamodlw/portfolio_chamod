@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/projects.css';
-import Footer from './footer';
 import Navprojects from './navbar-projects';
 import Web1 from './projects/web1';
 import Web2 from './projects/web2';
@@ -72,7 +71,6 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

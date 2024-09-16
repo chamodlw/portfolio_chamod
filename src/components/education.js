@@ -3,7 +3,6 @@ import '../css/education.css';
 import img1 from '../images/ccbc.jpg';
 import img2 from '../images/rcg.jpg';
 import img3 from '../images/uom.jpg';
-import Footer from './footer';
 
 const Education = () => {
 return (
@@ -74,7 +73,6 @@ return (
                 </div> 
             </div>
         </div>
-        <Footer />
     </div>
 );
 };
