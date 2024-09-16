@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBlog, faBriefcase, faCode, faCog, faEnvelope, faHome, faUniversity} from '@fortawesome/free-solid-svg-icons';
-import { NavLink, useNavigate } from 'react-router-dom'; // Import useNavigate
+import { faBlog, faBriefcase, faCode, faEnvelope, faHome, faUniversity} from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { NavLink } from 'react-router-dom'; // Import useNavigate
 import './css/Header.css'; // Import the CSS file
 import Typewriter from 'typewriter-effect';
 
 const Header = () => {
-  
-  const navigate = useNavigate(); // Use useNavigate
+
+  const GitHub = () => {
+    window.open('https://github.com/chamodlw', '_blank');
+  }
 
   return (
     <nav className={`navbar`}>
@@ -46,8 +49,8 @@ const Header = () => {
           <FontAwesomeIcon icon={faUniversity} style={{ marginRight: '3px' }} />
           Education
         </NavLink>
-        <NavLink className="nav-link">
-          <FontAwesomeIcon icon={faCog} style={{ marginLeft: '30px', marginRight: '35px' }} />
+        <NavLink className="nav-link" onClick={GitHub}>
+          <FontAwesomeIcon icon={faGithub} style={{ marginLeft: '30px', marginRight: '35px' , fontSize: '130%'}} />
         </NavLink>
       </div>
     </nav>

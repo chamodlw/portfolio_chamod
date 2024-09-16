@@ -4,7 +4,6 @@ import img2 from '../images/postman-1.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons'; 
-import Footer from './footer';
 
 const Blog = () => {
     return (
@@ -23,7 +22,6 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };
