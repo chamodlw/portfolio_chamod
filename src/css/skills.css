@@ -6,6 +6,7 @@
 }
 
 .technical {
+    padding-top: 4%;
     justify-content: center;
     width: 100%;
     margin-bottom: 40px;
@@ -15,7 +16,7 @@
 .technical-header {
     font-size: 28px;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
     -webkit-text-stroke: 0.5px #0F8CEC;
 }
@@ -23,9 +24,10 @@
 .tag-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     gap: 10%;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .horizontal-list {
