@@ -27,19 +27,19 @@ const Skills = () => {
                         <div className="card-with-head">
                             <h2 className='second-header'>MERN Tech Stack</h2>
                             <div className="card">
-                                <div className="card-header">
-                                    <img src={img1} alt="Card" className="card-image" />
-                                </div>
-                                <div className="card-text">
-                                    <h4>Medical Lab Management System | Second Year Software Project </h4>
-                                    <p><a href="https://github.com/chamodlw/SW_No.14_Frontend" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> GitHub Repository</a></p>
-                                    <p><a href="https://youtu.be/RtacSBP3y1Q?si=jxBOoaLwE_CWasXo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} /> Demo Video</a></p>
-                                    <p><a href="https://www.linkedin.com/posts/chamod-weerasinghe-b89aaa293_lims-medical-lab-information-management-activity-7235291488153133056-zaQx?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn Post</a></p>
-                                </div>
+                            <div className="card-header">
+                                <img src={img1} alt="Card" className="card-image" />
+                            </div>
+                            <div className="card-text">
+                                <h4>Medical Lab Management System | Second Year Software Project </h4>
+                                <p><a href="https://github.com/chamodlw/SW_No.14_Frontend" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> GitHub Repository</a></p>
+                                <p><a href="https://youtu.be/RtacSBP3y1Q?si=jxBOoaLwE_CWasXo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} /> Demo Video</a></p>
+                                <p><a href="https://www.linkedin.com/posts/chamod-weerasinghe-b89aaa293_lims-medical-lab-information-management-activity-7235291488153133056-zaQx?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn Post</a></p>
+                            </div>
                             </div>
                         </div>
                 </div>
-                <div className='program'>
+                <div className='web'>
                     <h1 className="co-headers">Programming</h1>
                         <div className="card-with-head">
                             <h2 className='second-header'>Java , Python ,C</h2>
@@ -64,7 +64,7 @@ const Skills = () => {
                             </div>
                         </div>
                 </div>
-                <div className='design'>
+                <div className='web'>
                     <h1 className="co-headers">Designing</h1>
                         <div className="card-with-head">
                             <h2 className='second-header'>Figma</h2>
