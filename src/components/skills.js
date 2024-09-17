@@ -4,6 +4,10 @@ import img1 from '../images/SW_project_L2.jpg';
 import img2 from '../images/bmi.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import LaptopMacTwoToneIcon from '@mui/icons-material/LaptopMacTwoTone';
+import PhoneAndroidTwoToneIcon from '@mui/icons-material/PhoneAndroidTwoTone';
+import TerminalTwoToneIcon from '@mui/icons-material/TerminalTwoTone';
+import DeblurTwoToneIcon from '@mui/icons-material/DeblurTwoTone';
 
 const Skills = () => {
     return (
@@ -22,10 +26,10 @@ const Skills = () => {
                     <div className='web'>
                         <h1 className="co-headers">Web development</h1>
                         <div className="card-with-head">
-                            <h2 className='second-header'>Html, Css, Java Script</h2>
+                            <h2 className='second-header'><LaptopMacTwoToneIcon style={{color: 'white', marginRight: '10px'}} />Html, Css, Java Script</h2>
                         </div>
                         <div className="card-with-head">
-                            <h2 className='second-header'>MERN Tech Stack</h2>
+                            <h2 className='second-header'><LaptopMacTwoToneIcon style={{color: 'white', marginRight: '10px'}}/>MERN Tech Stack</h2>
                             <div className="card">
                                 <div className="card-header">
                                     <img src={img1} alt="Card" className="card-image" />
@@ -42,16 +46,16 @@ const Skills = () => {
                     <div className='web'>
                         <h1 className="co-headers">Programming</h1>
                         <div className="card-with-head">
-                            <h2 className='second-header'>Java , Python ,C</h2>
+                            <h2 className='second-header'><TerminalTwoToneIcon style={{color: 'white', marginRight: '10px'}}/>Java , Python ,C</h2>
                         </div>
                     </div>
                     <div className='mobile'>
                         <h1 className="co-headers">Mobile App Development</h1>
                         <div className="card-with-head">
-                            <h2 className='second-header'>React-Native</h2>
+                            <h2 className='second-header'><PhoneAndroidTwoToneIcon style={{color: 'white', marginRight: '9px'}} />React-Native</h2>
                         </div>
                         <div className="card-with-head">
-                            <h2 className='second-header'>Flutter</h2>
+                            <h2 className='second-header'><PhoneAndroidTwoToneIcon style={{color: 'white', marginRight: '9px'}} />Flutter</h2>
                             <div className="card">
                                 <div className="card-header">
                                     <img src={img2} alt="Card" className="card-image" />
@@ -67,13 +71,13 @@ const Skills = () => {
                     <div className='web'>
                         <h1 className="co-headers">Designing</h1>
                         <div className="card-with-head">
-                            <h2 className='second-header'>Figma</h2>
+                            <h2 className='second-header'><DeblurTwoToneIcon style={{color: 'white', marginRight: '10px'}} />Figma</h2>
                         </div>
                         <div className="card-with-head">
-                            <h2 className='second-header'>Adobe Photoshop</h2>
+                            <h2 className='second-header'><DeblurTwoToneIcon style={{color: 'white', marginRight: '10px'}} />Adobe Photoshop</h2>
                         </div>
                         <div className="card-with-head">
-                            <h2 className='second-header'>CANVA</h2>
+                            <h2 className='second-header'><DeblurTwoToneIcon style={{color: 'white', marginRight: '10px'}} />CANVA</h2>
                         </div>
                     </div>
                 </div>
