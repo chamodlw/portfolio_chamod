@@ -10,7 +10,6 @@
     justify-content: center;
     width: 100%;
     margin-bottom: 40px;
-    margin-left: 8%;
 }
 
 .technical-header {
@@ -48,6 +47,25 @@
 
 .horizontal-list > div:last-child {
     margin-right: 0; /* No extra space after the last div */
+}
+
+/* Mobile mode (max width 768px) */
+@media (max-width: 768px) {
+    .horizontal-list {
+        flex-direction: column; /* Vertical alignment */
+        align-items: center; /* Center the items */
+    }
+
+    .horizontal-list > div {
+        text-align: center;
+        width: 100%;
+        margin-right: 0; /* Remove horizontal space between divs */
+        margin-bottom: 15px; /* Add vertical space between divs */
+    }
+    
+    .horizontal-list > div:last-child {
+        margin-bottom: 0; /* No extra space after the last div */
+    }
 }
 
 .web {
@@ -123,7 +141,7 @@ a:hover {
 }
 
 .card{
-    max-width: 55%;
+    max-width: 65%;
     border: 1px solid #ffffff;
     border-radius: 10px;
     display: flex;
