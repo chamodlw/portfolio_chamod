@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/projects.css';
 import Navprojects from './navbar-projects';
 import Web1 from './projects/web1';
@@ -9,6 +9,14 @@ import Mobile2 from './projects/mobile2';
 import Mobile3 from './projects/mobile3';
 
 const Projects = () => {
+
+    const [type, setType] = useState(0);
+
+    const handleChildData = (data) => {
+        setType(data);
+        console.log(data); // Log the passed type correctly
+      };      
+    
     return (
         <div>
             <div className="projects">
@@ -16,7 +24,7 @@ const Projects = () => {
                     <h1>PROJECTS</h1>
                 </div>
                 <div className='nav-projects'>
-                    <Navprojects />
+                    <Navprojects  onTypeChange={handleChildData}/>
                 </div>
                 <div className="projects-body">
                     <div className='web'>

@@ -14,18 +14,20 @@ const CustomBottomNavigation = styled(BottomNavigation)({
   borderRadius: '30px', // Border radius 10px
 });
 
-export default function SimpleBottomNavigation() {
-  const [value, setValue] = React.useState(0);
+export default function SimpleBottomNavigation({onTypeChange}) {
+  const [type, setType] = React.useState(0);
 
   return (
     <Box sx={{ width: 500 }}>
       <CustomBottomNavigation
-        showLabels
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
+      showLabels
+      value={type}
+      onChange={(event, newType) => {
+        setType(newType);
+        onTypeChange(newType); // Pass the newType to parent
+      }}
       >
+
         <BottomNavigationAction
           label="Web Apps"
           icon={<DesktopMacIcon />}
