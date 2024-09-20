@@ -10,7 +10,6 @@ import Mobile3 from './projects/mobile3';
 
 const Projects = () => {
     const [type, setType] = useState(0);
-
     // Create refs for each section
     const webSectionRef = useRef(null);
     const mobileSectionRef = useRef(null);
