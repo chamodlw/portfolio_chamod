@@ -27,10 +27,10 @@ const Skills = () => {
                     <h1 className="technical-header">Technical Skills</h1>
                     <div className='tag-section'>
                         <div className='horizontal-list'>
-                            <div onClick={() => setSkill('Web development')}>Web development</div>
-                            <div onClick={() => setSkill('Programming')}>Programming</div>
-                            <div onClick={() => setSkill('Mobile App Development')}>Mobile App Development</div>
-                            <div onClick={() => setSkill('Designing')}>Designing</div>
+                            <div onClick={() => setSkill('Web development')} style={{cursor: 'pointer'}}>Web development</div>
+                            <div onClick={() => setSkill('Programming')} style={{cursor: 'pointer'}}>Programming</div>
+                            <div onClick={() => setSkill('Mobile App Development')} style={{cursor: 'pointer'}}>Mobile App Development</div>
+                            <div onClick={() => setSkill('Designing')} style={{cursor: 'pointer'}}>Designing</div>
                         </div>
                     </div>
 
