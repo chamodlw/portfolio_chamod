@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/skills.css';
 import img1 from '../images/SW_project_L2.jpg';
 import img2 from '../images/bmi.png';
@@ -10,6 +10,16 @@ import TerminalTwoToneIcon from '@mui/icons-material/TerminalTwoTone';
 import DeblurTwoToneIcon from '@mui/icons-material/DeblurTwoTone';
 
 const Skills = () => {
+
+    const [skill, setSkill] = useState('');
+
+    useEffect(() => {
+        const section = document.getElementById(skill.toLowerCase().replace(/\s+/g, '-'));
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [skill]);
+
     return (
         <div>
             <div className="skills">
@@ -17,19 +27,21 @@ const Skills = () => {
                     <h1 className="technical-header">Technical Skills</h1>
                     <div className='tag-section'>
                         <div className='horizontal-list'>
-                            <div>Web development</div>
-                            <div>Programming</div>
-                            <div>Mobile App Development</div>
-                            <div>Designing</div>
+                            <div onClick={() => setSkill('Web development')}>Web development</div>
+                            <div onClick={() => setSkill('Programming')}>Programming</div>
+                            <div onClick={() => setSkill('Mobile App Development')}>Mobile App Development</div>
+                            <div onClick={() => setSkill('Designing')}>Designing</div>
                         </div>
                     </div>
-                    <div className='web'>
+
+                    {/* Web Development Section */}
+                    <div id="web-development" className='web'>
                         <h1 className="co-headers">Web development</h1>
                         <div className="card-with-head">
-                            <h2 className='second-header'><LaptopMacTwoToneIcon style={{color: 'white', marginRight: '10px'}} />Html, Css, Java Script</h2>
+                            <h2 className='second-header'><LaptopMacTwoToneIcon style={{ color: 'white', marginRight: '10px' }} />Html, Css, Java Script</h2>
                         </div>
                         <div className="card-with-head">
-                            <h2 className='second-header'><LaptopMacTwoToneIcon style={{color: 'white', marginRight: '10px'}}/>MERN Tech Stack</h2>
+                            <h2 className='second-header'><LaptopMacTwoToneIcon style={{ color: 'white', marginRight: '10px' }} />MERN Tech Stack</h2>
                             <div className="card">
                                 <div className="card-header">
                                     <img src={img1} alt="Card" className="card-image" />
@@ -43,19 +55,23 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='web'>
+
+                    {/* Programming Section */}
+                    <div id="programming" className='web'>
                         <h1 className="co-headers">Programming</h1>
                         <div className="card-with-head">
-                            <h2 className='second-header'><TerminalTwoToneIcon style={{color: 'white', marginRight: '10px'}}/>Java , Python ,C</h2>
+                            <h2 className='second-header'><TerminalTwoToneIcon style={{ color: 'white', marginRight: '10px' }} />Java , Python ,C</h2>
                         </div>
                     </div>
-                    <div className='mobile'>
+
+                    {/* Mobile App Development Section */}
+                    <div id="mobile-app-development" className='mobile'>
                         <h1 className="co-headers">Mobile App Development</h1>
                         <div className="card-with-head">
-                            <h2 className='second-header'><PhoneAndroidTwoToneIcon style={{color: 'white', marginRight: '9px'}} />React-Native</h2>
+                            <h2 className='second-header'><PhoneAndroidTwoToneIcon style={{ color: 'white', marginRight: '9px' }} />React-Native</h2>
                         </div>
                         <div className="card-with-head">
-                            <h2 className='second-header'><PhoneAndroidTwoToneIcon style={{color: 'white', marginRight: '9px'}} />Flutter</h2>
+                            <h2 className='second-header'><PhoneAndroidTwoToneIcon style={{ color: 'white', marginRight: '9px' }} />Flutter</h2>
                             <div className="card">
                                 <div className="card-header">
                                     <img src={img2} alt="Card" className="card-image" />
@@ -68,20 +84,23 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='web'>
+
+                    {/* Designing Section */}
+                    <div id="designing" className='web'>
                         <h1 className="co-headers">Designing</h1>
                         <div className="card-with-head">
-                            <h2 className='second-header'><DeblurTwoToneIcon style={{color: 'white', marginRight: '10px'}} />Figma</h2>
+                            <h2 className='second-header'><DeblurTwoToneIcon style={{ color: 'white', marginRight: '10px' }} />Figma</h2>
                         </div>
                         <div className="card-with-head">
-                            <h2 className='second-header'><DeblurTwoToneIcon style={{color: 'white', marginRight: '10px'}} />Adobe Photoshop</h2>
+                            <h2 className='second-header'><DeblurTwoToneIcon style={{ color: 'white', marginRight: '10px' }} />Adobe Photoshop</h2>
                         </div>
                         <div className="card-with-head">
-                            <h2 className='second-header'><DeblurTwoToneIcon style={{color: 'white', marginRight: '10px'}} />CANVA</h2>
+                            <h2 className='second-header'><DeblurTwoToneIcon style={{ color: 'white', marginRight: '10px' }} />CANVA</h2>
                         </div>
                     </div>
                 </div>
-                {/*seperate*/}
+
+                {/* Separate Soft Skills Section */}
                 <div className='soft'>
                     <h1 className="soft-header">Soft Skills</h1>
                     <div className='tag-section'>
