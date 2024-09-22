@@ -11,12 +11,13 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { GitHub, LinkedIn, MedicalServicesOutlined, YouTube } from '@mui/icons-material';
+import { GitHub, LinkedIn, YouTube } from '@mui/icons-material';
+import ElevatorOutlinedIcon from '@mui/icons-material/ElevatorOutlined';
 import web_img1 from '../../images/bmi2.png';
 
 // Sections in array format
 const web1 = {
-  avatar: <MedicalServicesOutlined />,
+  avatar: <ElevatorOutlinedIcon />,
   title: "BMI Calculator",
   subheader: "Flutter App",
   image: web_img1,
