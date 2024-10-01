@@ -3,7 +3,7 @@ import './css/Home.css';
 import profpic from './images/chamod1.png';
 import Mysides from './components/mysides.js';
 import ThreeScene from './components/ThreeScene.js';
-import cv from './pdf/resume.pdf';
+import cv from './pdf/resume_new.pdf';
 
 const Home = () => {
 const handleClick = () => {
