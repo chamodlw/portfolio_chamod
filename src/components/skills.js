@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../css/skills.css';
 import img1 from '../images/SW_project_L2.jpg';
 import img2 from '../images/bmi.png';
+import img3 from '../images/chat2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import LaptopMacTwoToneIcon from '@mui/icons-material/LaptopMacTwoTone';
@@ -69,6 +70,16 @@ const Skills = () => {
                         <h1 className="co-headers">Mobile App Development</h1>
                         <div className="card-with-head">
                             <h2 className='second-header'><PhoneAndroidTwoToneIcon style={{ color: 'white', marginRight: '9px' }} />React-Native</h2>
+                            <div className="card">
+                                <div className="card-header">
+                                    <img src={img3} alt="Card" className="card-image" />
+                                </div>
+                                <div className="card-text">
+                                    <h4> AI ChatBot | React Native | Mobile Application</h4>
+                                    <p><a href="https://github.com/chamodlw/ai_chatbot.git" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> GitHub Repository</a></p>
+                                    <p><a href="https://youtube.com/shorts/aePxKzuk8uI?si=V39B5xpbUCJNeoDs" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} /> Demo Video</a></p>
+                                </div>
+                            </div>
                         </div>
                         <div className="card-with-head">
                             <h2 className='second-header'><PhoneAndroidTwoToneIcon style={{ color: 'white', marginRight: '9px' }} />Flutter</h2>

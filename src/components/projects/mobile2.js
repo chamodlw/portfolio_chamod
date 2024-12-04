@@ -12,33 +12,33 @@ import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { GitHub, LinkedIn, YouTube } from '@mui/icons-material';
-import ElevatorOutlinedIcon from '@mui/icons-material/ElevatorOutlined';
-import web_img1 from '../../images/bmi2.png';
+import ForumTwoToneIcon from '@mui/icons-material/ForumTwoTone';
+import web_img1 from '../../images/chat3.png';
 
 // Sections in array format
 const web1 = {
-  avatar: <ElevatorOutlinedIcon />,
-  title: "BMI Calculator",
-  subheader: "Flutter App",
+  avatar: <ForumTwoToneIcon />,
+  title: "AI Chatbot",
+  subheader: "React-Native",
   image: web_img1,
   links: [
     {
       icon: <GitHub />,
-      onClick: () => window.open('https://github.com/chamodlw/BMI')
+      onClick: () => window.open('https://github.com/chamodlw/ai_chatbot.git')
     },
     {
       icon: <YouTube />,
-      onClick: () => window.open('https://youtu.be/YoBMERlW-gg?si=1H1KITXVKMxlZbUR')
+      onClick: () => window.open('https://youtube.com/shorts/aePxKzuk8uI?si=oDsSaLez8bsNGVcu')
     },
     {
       icon: <LinkedIn />,
-      onClick: () => window.open('')
+      onClick: () => window.open('https://www.linkedin.com/posts/chamod-weerasinghe-b89aaa293_reactnative-aichatbot-mobiledevelopment-activity-7266485152216690689-Uxa8?utm_source=share&utm_medium=member_desktop')
     }
   ],
   features: [
-    "Easy-to-use interface for calculating BMI.Input fields for height and weight.Instant results displaying BMI as OK, Low, or High based on calculations.Helpful tips for maintaining a healthy BMI.",
-    "Description:This app provides a quick and simple way to calculate your Body Mass Index (BMI) by entering your height and weight. It instantly categorizes your BMI as OK, Low, or High, helping you understand your health status with ease.",
-    ""
+    "This app combines advanced AI with cutting-edge features to deliver a highly interactive and accessible chat experience.", 
+    "With text-to-audio conversion, you can listen to your conversations, making it convenient for on-the-go use.", 
+    "Powered by the free Gemini API, the app offers intelligent and versatile support for your needs, ensuring productive and personalized interactions every time."
   ]
 };
 
@@ -80,7 +80,7 @@ export default function RecipeReviewCard() {
       />
       <CardContent>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Flutter
+          React-Native
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
