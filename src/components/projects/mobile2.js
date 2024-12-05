@@ -15,7 +15,7 @@ import { GitHub, LinkedIn, YouTube } from '@mui/icons-material';
 import ForumTwoToneIcon from '@mui/icons-material/ForumTwoTone';
 import web_img1 from '../../images/chat3.png';
 
-// Sections in array format
+// Sections in array format of chatbot
 const web1 = {
   avatar: <ForumTwoToneIcon />,
   title: "AI Chatbot",
