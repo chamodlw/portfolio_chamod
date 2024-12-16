@@ -7,7 +7,7 @@ return (
     <div className="Mysides">
         <Typewriter
           options={{
-            strings: ['Full Stack Web Developer', 'Graphic Designer'],
+            strings: ['Full Stack Web Developer', 'Mobile App Developer', 'Graphic Designer'],
             autoStart: true,
             loop: true,
             deleteSpeed: 100, // Set delete speed to Infinity to prevent deleting
