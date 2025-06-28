@@ -1,7 +1,10 @@
 .Blog{
     margin-top: 4%;
-    margin-left: 5%;
-    min-height: 80vh;
+    margin-left: 0%;
+}
+
+.Blog-container{
+   margin-bottom: 25px;
 }
 
 .Blog-header{
