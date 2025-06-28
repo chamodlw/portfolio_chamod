@@ -14,7 +14,7 @@ return (
         <div className='education-body'>
             <div className='internship'>
                 <div className='sub-header'>
-                    <h2>Internship</h2>
+                    <h2>SE - Internship</h2>
                     <div className='sub-body'>
                         <div className="carde">
                             <div className="carde-header">
