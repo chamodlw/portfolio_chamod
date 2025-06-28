@@ -3,6 +3,7 @@ import '../css/education.css';
 import img1 from '../images/ccbc.jpg';
 import img2 from '../images/rcg.jpg';
 import img3 from '../images/uom.jpg';
+import img4 from '../images/nimbus.png';
 
 const Education = () => {
 return (
@@ -10,7 +11,28 @@ return (
         <div className="education-header">
             <h1>Education</h1>
         </div>
-        <div className='education-body'> 
+        <div className='education-body'>
+            <div className='internship'>
+                <div className='sub-header'>
+                    <h2>Internship</h2>
+                    <div className='sub-body'>
+                        <div className="carde">
+                            <div className="carde-header">
+                                <img src={img4} alt="Card" className="carde-image" />
+                            </div>
+                            <div className="carde-text">
+                                <h4>Nimbus Venture (pvt) Ltd | Nawala</h4>
+                                <p>Internship in Software Engineering - Mobile (2025)</p>
+                                <p>Duration: 6 Months</p>
+                                <p>Technologies: Flutter, Firebase</p>
+                                <p>
+                                    During my internship, I worked on developing a mobile application using Flutter, focusing on enhancing user experience and implementing efficient coding practices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
             <div className='uni'>
                 <div className='sub-header'>
                     <h2>Higher Education</h2>
