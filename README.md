@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# 🚀 Chamod’s Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my **personal portfolio repository**!  
+This project showcases my work, skills, and journey as a developer. Explore the code, browse my featured projects, and get in touch if you’d like to collaborate or just say hi!
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Live Preview
 
-### `npm start`
+> https://chamodweerasinghe.vercel.app/
+> You can view the live portfolio site once deployed. Stay tuned for updates.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Features
 
-### `npm test`
+- **Responsive Design**: Looks great on any device—desktop, tablet, or mobile.
+- **Project Gallery**: Browse my top projects, each with images, descriptions, and links to case studies.
+- **About Me**: Learn about my background, skills, and what drives me as a developer.
+- **Contact Form**: Reach out directly through the site—messages land right in my inbox.
+- **Easy to Customize**: Built with clean React & js for effortless updates and scalability[3][4].
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚧 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the repository and launch it locally:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone https://github.com/chamodlw/portfolio_chamod.git
+cd portfolio_chamod
+open index.html
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+No frameworks required—just open `index.html` in your browser!
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Folder/File        | Purpose                                   |
+|--------------------|-------------------------------------------|
+| `index.html`       | Main landing page                         |
+| `assets/`          | Images, icons, and other media            |
+| `css/`             | Stylesheets for layout and design         |
+| `js/`              | JavaScript for interactivity              |
+| `project-1`        | Detailed case study for Project 1         |
+| `project-2`        | Detailed case study for Project 2         |
+| `project-3`        | Detailed case study for Project 3         |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Add more projects by duplicating a `project-x` file and updating the content[4].
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🖼️ Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> _![image](https://github.com/user-attachments/assets/53a5964c-4e6e-4ada-a587-737a351ba5d8)
+_  
+>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ✨ Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Projects**: Update the `Projects` section with your own work, images, and links.
+- **Contact**: Configure the contact form to use [Formspree](https://formspree.io) or Netlify for email submissions[4].
+- **Branding**: Swap out colors, fonts, and images to match your personal style.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📬 Contact
 
-### Making a Progressive Web App
+Have feedback, questions, or collaboration ideas?  
+Reach me via the contact form on the site, or open an [issue](https://github.com/chamodlw/portfolio_chamod/issues) in this repo.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🙏 Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Inspired by open-source portfolio templates and the amazing developer community[2][4][5].
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+> _Thank you for visiting my portfolio repository!_  
+> **Star** this repo if you like it, and feel free to fork or contribute.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
