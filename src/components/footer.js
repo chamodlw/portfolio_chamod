@@ -55,13 +55,13 @@ const Footer = () => {
           gap: '2%',
         }}
       >
-        <IconButton href="https://github.com/your-profile" sx={{ color: '#fff' }}>
+        <IconButton href="https://github.com/chamodlw" sx={{ color: '#fff' }}>
           <GitHubIcon />
         </IconButton>
-        <IconButton href="https://instagram.com/your-profile" sx={{ color: '#fff' }}>
+        <IconButton href="https://www.instagram.com/weere__cl00___/" sx={{ color: '#fff' }}>
           <InstagramIcon />
         </IconButton>
-        <IconButton href="https://linkedin.com/in/your-profile" sx={{ color: '#fff' }}>
+        <IconButton href="https://www.linkedin.com/in/chamod-weerasinghe-b89aaa293/" sx={{ color: '#fff' }}>
           <LinkedInIcon />
         </IconButton>
       </Box>
