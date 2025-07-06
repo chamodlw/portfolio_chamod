@@ -1,5 +1,11 @@
-.Mysides{
+.Mysides {
     font-weight: 700;
     font-size: 50px;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .Mysides {
+        font-size: 35px;
+    }
 }

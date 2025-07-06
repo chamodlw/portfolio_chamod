@@ -15,8 +15,13 @@ const Footer = () => {
         width: '100%',
       }}
     >
-      <Typography variant="h6" sx={{ marginBottom: '10px' }}>
-        © 2024 Chamod Weerasinghe
+      <Typography variant="h6" sx={{
+        marginBottom: '10px', fontSize: {
+          xs: '11px',
+          sm: '18px',
+        },
+      }}>
+        © 2025 Chamod Weerasinghe
       </Typography>
       <Box
         sx={{
@@ -27,23 +32,53 @@ const Footer = () => {
           flexWrap: 'wrap',
         }}
       >
-        <Link href="#" underline="none" sx={{ color: '#fff' }}>
+        <Link href="/" underline="none" sx={{
+          color: '#fff', fontSize: {
+            xs: '13px',
+            sm: '18px',
+          }
+        }}>
           Home
         </Link>
-        <Link href="#" underline="none" sx={{ color: '#fff' }}>
+        <Link href="/skills" underline="none" sx={{
+          color: '#fff', fontSize: {
+            xs: '13px',
+            sm: '18px',
+          }
+        }}>
           Skills
         </Link>
-        <Link href="#" underline="none" sx={{ color: '#fff' }}>
-          Services
+        <Link href="/projects" underline="none" sx={{
+          color: '#fff', fontSize: {
+            xs: '13px',
+            sm: '18px',
+          }
+        }}>
+          Projects
         </Link>
-        <Link href="#" underline="none" sx={{ color: '#fff' }}>
-          Blog
+        <Link href="/blog" underline="none" sx={{
+          color: '#fff', fontSize: {
+            xs: '13px',
+            sm: '18px',
+          }
+        }}>
+          Blogs
         </Link>
-        <Link href="#" underline="none" sx={{ color: '#fff' }}>
+        <Link href="/contact" underline="none" sx={{
+          color: '#fff', fontSize: {
+            xs: '13px',
+            sm: '18px',
+          }
+        }}>
           Contact
         </Link>
-        <Link href="#" underline="none" sx={{ color: '#fff' }}>
-          About
+        <Link href="/education" underline="none" sx={{
+          color: '#fff', fontSize: {
+            xs: '13px',
+            sm: '18px',
+          }
+        }}>
+          Education
         </Link>
       </Box>
 
@@ -69,8 +104,10 @@ const Footer = () => {
       <Typography
         variant="body2"
         sx={{
-          marginTop: '20px',
-          fontSize: '12px',
+          marginTop: '20px', fontSize: {
+            xs: '9px',
+            sm: '13px',
+          },
           color: 'rgba(255, 255, 255, 0.7)',
         }}
       >
