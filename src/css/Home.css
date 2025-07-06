@@ -12,7 +12,7 @@ body {
 }
 
 .Home-profile-pic {
-    margin-top: 25%;
+    margin-top: 20%;
     margin-left: 18%;
     float: right;
     width: 100px;
@@ -109,7 +109,9 @@ body {
     }
 
     .Home-header p {
-        font-size: 32px !important;
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 22px !important;
     }
 
     .myname {
@@ -117,9 +119,15 @@ body {
     }
 
     .b1 {
-        font-size: 1rem;
-        padding: 8px 16px;
+        font-size: 0.9rem;
+        padding: 6px 12px;
         margin-top: 15px;
+        margin-top: 5%;
+    }
+
+    .resume {
+        margin-left: 10px;
+        text-align: center;
     }
 }
 
@@ -132,7 +140,12 @@ body {
 
 @media (max-width: 768px) {
     .profile-image {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
+    }
+    .Home-profile-pic img {
+        margin-top: 15%;
+        width: 180px !important;
+        height: 180px !important;
     }
 }

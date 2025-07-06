@@ -11,6 +11,8 @@ const Header = () => {
   const GitHub = () => {
     window.open('https://github.com/chamodlw', '_blank');
   }
+  // Get the current screen width
+  const screenWidth = window.innerWidth;
 
   return (
     <nav className={`navbar`}>
@@ -50,7 +52,7 @@ const Header = () => {
           Education
         </NavLink>
         <NavLink className="nav-link" onClick={GitHub}>
-          <FontAwesomeIcon icon={faGithub} style={{ marginLeft: '15px', marginRight: '10px' , fontSize: '130%'}} />
+          <FontAwesomeIcon icon={faGithub} style={{ marginLeft: '10px', marginRight: screenWidth*0.025 , fontSize: '130%'}} />
         </NavLink>
       </div>
     </nav>
