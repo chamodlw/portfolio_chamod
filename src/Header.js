@@ -50,7 +50,7 @@ const Header = () => {
           Education
         </NavLink>
         <NavLink className="nav-link" onClick={GitHub}>
-          <FontAwesomeIcon icon={faGithub} style={{ marginLeft: '30px', marginRight: '35px' , fontSize: '130%'}} />
+          <FontAwesomeIcon icon={faGithub} style={{ marginLeft: '15px', marginRight: '10px' , fontSize: '130%'}} />
         </NavLink>
       </div>
     </nav>
