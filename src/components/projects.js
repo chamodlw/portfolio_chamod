@@ -140,9 +140,9 @@ export default function Projects() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 28 }}>
           {filtered.map((p, i) => (
             <div
-              key={p.id}
-              className="glass-card fade-up"
-              style={{ overflow: 'hidden', transitionDelay: `${i * 80}ms` }}
+              key={`${filter}-${p.id}`}
+              className="glass-card"
+              style={{ overflow: 'hidden', animation: `tabIn 0.35s ease ${i * 80}ms both` }}
             >
               {/* Image */}
               <div style={{ position: 'relative', overflow: 'hidden', height: 200 }}>
@@ -237,6 +237,12 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      <style>{`
+        @keyframes tabIn {
+          from { opacity: 0; transform: translateY(16px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </div>
   );
 }

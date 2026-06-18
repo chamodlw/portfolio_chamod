@@ -6,26 +6,24 @@ import ccbcImg from '../images/ccbc.jpg';
 
 const workItems = [
   {
-    type: 'work',
     role: 'Associate Software Engineer',
     company: 'ZinCaT Technology',
     location: 'Mount Lavinia · Hybrid',
     duration: 'Aug 2025 – Present · 11 mos',
     employment: 'Full-time',
-    description: 'Working as a Web & Mobile developer, building modern web applications and mobile solutions for clients.',
+    description: 'Working as a Web & Mobile developer, building modern web applications and mobile solutions for clients using Next.js, WordPress, and React Native.',
     skills: ['Next.js', 'WordPress', 'React Native'],
     color: '#6366f1',
     logo: null,
     logoText: 'ZC',
   },
   {
-    type: 'work',
     role: 'Software Engineering Intern',
     company: 'Nimbus Venture (Pvt) Ltd',
     location: 'Nawala, Sri Lanka',
     duration: '2025 · 6 Months',
     employment: 'Internship',
-    description: 'Developed a mobile application using Flutter, focusing on enhancing user experience and implementing efficient coding practices.',
+    description: 'Developed a mobile application using Flutter, focusing on enhancing user experience and implementing efficient coding practices with Firebase integration.',
     skills: ['Flutter', 'Firebase', 'Dart'],
     color: '#06b6d4',
     logo: nimbusImg,
@@ -52,11 +50,11 @@ const eduItems = [
     color: '#f59e0b',
   },
   {
-    degree: "Primary to O/L",
+    degree: 'Primary to Ordinary Level',
     institution: "Christ Church Boys' College",
     location: 'Baddegama, Galle',
     duration: '2006 – 2017',
-    detail: "O/L Results: 9 Distinctions · Passed scholarship exam · Senior Prefect · Actively involved in extracurricular and academic activities.",
+    detail: "O/L Results: 9 Distinctions · Passed scholarship exam · Senior Prefect · Active in extracurricular and academic activities.",
     image: ccbcImg,
     color: '#10b981',
   },
@@ -107,13 +105,12 @@ export default function Experience() {
 
         {/* Work experience timeline */}
         {tab === 'work' && (
-          <div style={{ position: 'relative' }}>
+          <div key="work" style={{ position: 'relative', animation: 'tabIn 0.35s ease' }}>
             <div style={{ position: 'absolute', left: 20, top: 0, bottom: 0, width: 1, background: 'var(--border)' }} />
             {workItems.map((item, i) => (
               <div
                 key={item.company}
-                className="fade-up"
-                style={{ display: 'flex', gap: 32, marginBottom: 40, transitionDelay: `${i * 100}ms` }}
+                style={{ display: 'flex', gap: 32, marginBottom: 40, animationDelay: `${i * 80}ms` }}
               >
                 {/* Dot */}
                 <div style={{ position: 'relative', flexShrink: 0, width: 40 }}>
@@ -122,9 +119,8 @@ export default function Experience() {
                     border: `2px solid ${item.color}`,
                     background: item.color + '20',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: item.logo ? 0 : 13, fontWeight: 700, color: item.color,
-                    overflow: 'hidden',
-                    position: 'relative', zIndex: 1,
+                    fontSize: 13, fontWeight: 700, color: item.color,
+                    overflow: 'hidden', position: 'relative', zIndex: 1,
                   }}>
                     {item.logo
                       ? <img src={item.logo} alt={item.company} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -150,9 +146,7 @@ export default function Experience() {
                       <p style={{ fontSize: 12, color: 'var(--muted)' }}>{item.location}</p>
                     </div>
                   </div>
-
                   <p style={{ fontSize: 14, color: 'var(--text2)', lineHeight: 1.7, marginBottom: 16 }}>{item.description}</p>
-
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                     {item.skills.map((s) => (
                       <span key={s} style={{
@@ -171,12 +165,12 @@ export default function Experience() {
 
         {/* Education */}
         {tab === 'edu' && (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 24 }}>
+          <div key="edu" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 24, animation: 'tabIn 0.35s ease' }}>
             {eduItems.map((item, i) => (
               <div
                 key={item.institution}
-                className="glass-card fade-up"
-                style={{ overflow: 'hidden', transitionDelay: `${i * 80}ms` }}
+                className="glass-card"
+                style={{ overflow: 'hidden', animation: `tabIn 0.35s ease ${i * 80}ms both` }}
               >
                 <div style={{ height: 140, overflow: 'hidden' }}>
                   <img src={item.image} alt={item.institution} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -184,10 +178,7 @@ export default function Experience() {
                 <div style={{ padding: 24 }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 10 }}>
                     <span style={{ fontSize: 12, color: 'var(--muted)' }}>{item.duration}</span>
-                    <span style={{
-                      padding: '3px 10px', borderRadius: 50, fontSize: 11, fontWeight: 600,
-                      background: item.color + '20', color: item.color,
-                    }}>
+                    <span style={{ padding: '3px 10px', borderRadius: 50, fontSize: 11, fontWeight: 600, background: item.color + '20', color: item.color }}>
                       Academic
                     </span>
                   </div>
@@ -202,6 +193,13 @@ export default function Experience() {
           </div>
         )}
       </div>
+
+      <style>{`
+        @keyframes tabIn {
+          from { opacity: 0; transform: translateY(16px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </div>
   );
 }
